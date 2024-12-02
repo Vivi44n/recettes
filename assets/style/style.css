@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+  }
+
+  p {
+color: #eb4034;
+
+  }
+
+/* navbar */
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 1px 20px;
+  }
+
+  .navbar ol {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar li {
+    font-size: 18px;
+  }
+
+  .navbar-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-title a {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+  }
+
+
+  .btn-login {
+    padding: 8px 30px;
+    background-color: #eb4034;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+  }
+
+  .btn-login:hover {
+    background-color: #75110a;
+  }
+
+  .footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer p {
+    margin: 0 0 10px;
+}
+
+.footer-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #0056b3;
+}
