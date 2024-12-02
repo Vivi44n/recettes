@@ -6,8 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-
-    <h1>Mon site de cuisine</h1>
     
+    <?php
+    include ('./include/header.php');
+?>
+
+<h1>jguyfut</h1>
+
+
+
+
 </body>
 </html>

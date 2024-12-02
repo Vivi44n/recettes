@@ -1,45 +1,16 @@
 <?php
-
-$host = 'localhost';
-$port = 3306;
-$dbname = 'vivianrecettes';
-$username = 'root';
-$password  = '';
-
-try {
-
-// connexion à la BDD avec PSO
-$dsn = "mysql:host=$host;port=3306; dbname=$dbname;";
-$pdo = new  PDO ($dsn , $username, $password);
-
-// config attribut PDO
-$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-} catch (PDOException $e) {
-
-    die("Erreur de connexion ou de requète" . $e->getMessage());
-
-}
-
-// Fermeture de la connexion (automatique à la fin du sript)
-
+require("db/connexion_bdd.php");
 ?>
 
+<form action="connexion_bdd.php" method="post">
+    <label for="identifiant">Identifiant</label>
+    <input type="text" name="identifiant" id="identifiant" placeholder="Entrez votre identifiant" required />
 
+    <label for="mdp">Mot de passe</label>
+    <input type="password" name="mdp" id="mdp" placeholder="Entrez votre mot de passe" required />
 
+    <label for="email">E-mail</label>
+    <input type="email" name="email" id="email" placeholder="Entrez votre email" required />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <button type="submit">Soumettre</button>
+</form>
